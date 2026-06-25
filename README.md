@@ -1,15 +1,1 @@
-# nanofetch
-
-unzip nanofetch.zip
-
-cd nanofetch
-
-chmod +x mf.py
-
-sudo cp mf.py /usr/local/bin/nanofetch
-
-sudo mkdir -p /usr/local/share/nanofetch
-
-sudo cp art.txt /usr/local/share/nanofetch/
-
-nanofetch
+git clone https://github.com/svalked-dev/nanofetch.git && cd nanofetch && chmod +x mf.py && mkdir -p ~/.local/bin && cp mf.py ~/.local/bin/nanofetch && cp art.txt ~/.local/share/nanofetch/ && echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc && cd .. && rm -rf nanofetch
